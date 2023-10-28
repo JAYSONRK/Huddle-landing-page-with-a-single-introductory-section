@@ -111,9 +111,9 @@ button:hover {
     list-style-type: none;
     margin: 0.5rem 0.5rem;
     border: 1px solid white;  
-    width :  2rem;
-    height:  2rem;
-    padding-top: 0.3rem;
+    width :  2.5rem;
+    height:  2.5rem;
+    padding-top: 0.4rem;
     border-radius: 50%;
 }
 
@@ -148,27 +148,27 @@ i, ion-icon {
     }
 
     #logo {
-        width: 12rem;  
+        width: 15rem;  
     }
 
     picture img {
         max-width: 110%;
-        margin: 2rem 0;
+        margin: 3rem 0;
     }
 
     
     .description {
         text-align: left;
-        margin:6rem  6rem 0; 
+        margin :6rem  2rem 0 5rem; 
         padding-left: 1.5rem;
     }
 
     .description h2 {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .description p {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
 
     .description ul {
@@ -180,7 +180,7 @@ i, ion-icon {
     }
 
     .description li {
-        padding-left: 0.5rem;
+        padding:0.5rem 0 0 0.8rem;
     }
 
     button {
