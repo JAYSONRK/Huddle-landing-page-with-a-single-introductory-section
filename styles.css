@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?gpw1tz');
+    src:  url('../fonts/icomoon.eot?gpw1tz#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?gpw1tz') format('truetype'),
+      url('../fonts/icomoon.woff?gpw1tz') format('woff'),
+      url('../fonts/icomoon.svg?gpw1tz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("images/bg-mobile.svg");
+    background-color: var(--Violet);
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    margin: 2.3rem;
+    display: grid;
+    grid-template-rows: repeat (2, 1fr);
+}
+
+#logo {
+    width: 8rem;
+}
+picture img {
+    max-width: 100%;
+    margin: 3rem 0;
+}
+
+.description{
+    text-align: center;
+}
+
+.description h2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.971);
+}
+
+.description p {
+    line-height: 1.5rem;;
+    color: rgba(255, 255, 255, 0.67);
+    padding: 1.5rem 0;
+}
+
+button {
+    padding: 0.8rem 5rem;
+    color: var(--Violet);
+    letter-spacing: 0.07rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var( --Soft-Magenta);
+    color: white;
+    transition: 0.15s ease-in-out;
+}
+
+.description ul {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.description li {
+    list-style-type: none;
+    margin: 0.5rem 0.5rem;
+    border: 1px solid white;  
+    width :  2rem;
+    height:  2rem;
+    padding-top: 0.3rem;
+    border-radius: 50%;
+}
+
+li:hover {
+    cursor: pointer;
+    border: 1px solid var( --Soft-Magenta);
+    transition: 0.15s ease-in-out;
+}
+
+i:hover, ion-icon:hover, span:hover {
+   cursor: pointer;
+   color: var( --Soft-Magenta);
+   transition: 0.15s ease-in-out;
+}
+
+i, ion-icon,span {
+    color: white;
+ }
+
+.attribution { font-size: 11px; text-align: center; color: hsl(226, 20%, 87%)}
+.attribution a { color:  rgb(0, 251, 255 ); }
+
+@media (min-width: 768px) {
+    body {
+        background-image: url("images/bg-desktop.svg");   
+    }
+
+    .card {
+        margin: 3rem 5rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)    
+    }
+
+    #logo {
+        width: 12rem;  
+    }
+
+    picture img {
+        max-width: 100%;
+        margin: 2rem 0;
+    }
+
+    
+    .description {
+        text-align: left;
+        margin:auto  2rem 0; 
+        padding-left: 1.5rem;
+    }
+
+    .description h2 {
+        font-size: 2rem;
+    }
+
+    .description p {
+        font-size: 0.9rem;
+    }
+
+    .description ul {
+        margin-top:4rem 0 0;;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .description li {
+        padding-left: 0.5rem;
+    }
+
+    button {
+        padding: 1rem 3.5rem;
+    }
+    
+}
