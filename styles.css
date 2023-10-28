@@ -123,13 +123,13 @@ li:hover {
     transition: 0.15s ease-in-out;
 }
 
-i:hover, ion-icon:hover, span:hover {
+i:hover, ion-icon:hover {
    cursor: pointer;
    color: var( --Soft-Magenta);
    transition: 0.15s ease-in-out;
 }
 
-i, ion-icon,span {
+i, ion-icon {
     color: white;
  }
 
@@ -142,7 +142,7 @@ i, ion-icon,span {
     }
 
     .card {
-        margin: 3rem 5rem 0;
+        margin: 5rem 5rem 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr)    
     }
@@ -152,14 +152,14 @@ i, ion-icon,span {
     }
 
     picture img {
-        max-width: 100%;
+        max-width: 110%;
         margin: 2rem 0;
     }
 
     
     .description {
         text-align: left;
-        margin:auto  2rem 0; 
+        margin:6rem  6rem 0; 
         padding-left: 1.5rem;
     }
 
@@ -175,6 +175,7 @@ i, ion-icon,span {
         margin-top:4rem 0 0;;
         display: flex;
         justify-content: flex-end;
+        transform: translateY(200%);
         
     }
 
